@@ -7,3 +7,7 @@ Go to my github profile, there are all the scripts there if you want the source.
 
 # Supported Games
 You can also do /console but Supported are: BedWars, SkyWars, PrisonLife, Critical Strike, Slap Battles, Pet Simulator X, Funky Friday, BloxWars and Breaking Point!
+
+# Changelog [Part 1]
+- Added Destruct Text first incase notification bugs out
+- Added PolyBattle
