@@ -137,7 +137,7 @@ Supported_3.TextXAlignment = Enum.TextXAlignment.Left
 -- GAMES
 
 wait(0)
-warn("Supported: BedWars, SkyWars, PrisonLife, Critical Strike, Slap Battles, Pet Simulator X, Funky Friday, BloxWars")
+warn("Supported: BedWars, SkyWars, PrisonLife, Critical Strike, Slap Battles, Pet Simulator X, Funky Friday, BloxWars, Breaking Point")
 print("Updated as of 6/4/2022")
 
 if game.PlaceId == 8542259458 then -- bedwars
@@ -211,6 +211,15 @@ if game.PlaceId == 5455985493 then -- Blox Wars
 	NotSupported.Visible = false -- check x2
 	shared.VapePrivate = true
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+    wait(5)
+    Supported.Visible = false
+end
+
+if game.PlaceId == 648362523 then -- Breaking Point
+	Supported.Visible = true
+	NotSupported.Visible = false -- check x2
+	shared.VapePrivate = true
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/tkorra/bp-gui/main/main.lua'))()
     wait(5)
     Supported.Visible = false
 end
