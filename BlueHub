@@ -1,5 +1,3 @@
--- UPDATED AS OF 6/4/2022
-
 -- Gui to Lua
 -- Version: 3.2
 
@@ -133,24 +131,42 @@ Supported_3.TextSize = 14.000
 Supported_3.TextWrapped = true
 Supported_3.TextXAlignment = Enum.TextXAlignment.Left
 
-warn("Supported Games: Skywars, BedWars, PrisonLife - [UPDATED AS OF 6/4/2022 AT 9:12PM PST]")
+warn("Supported Games: Skywars, BedWars, PrisonLife, Murder Mystery 2, Critical Strike - [UPDATED AS OF 6/4/2022 AT 9:12PM PST]")
 
-if game.PlaceId == 8542259458 then
+if game.PlaceId == 8542259458 then -- bedwars
 	Supported.Visible = true
 	NotSupported.Visible = false -- check x2
 	shared.VapePrivate = true
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
 end
 
-if game.PlaceId == 6872265039 then
+if game.PlaceId == 6872265039 then -- skywars
 	Supported.Visible = true
 	NotSupported.Visible = false -- check x2
 	shared.VapePrivate = true
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
 end
 
-if game.PlaceId == 155615604 then
+if game.PlaceId == 155615604 then -- prison
 	Supported.Visible = true
 	NotSupported.Visible = false -- check x2
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Bluueey/ScriptsForNewHub/main/PrisonLife", true))()
+end
+
+if game.PlaceId == 142823291 then -- mm2
+	Supported.Visible = true
+	NotSupported.Visible = false -- check x2
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Bluueey/ScriptsForNewHub/main/EclipseHub", true))()
+end
+
+if game.PlaceId == 111311599 then -- critical strike
+	Supported.Visible = true
+	NotSupported.Visible = false -- check x2
+	loadstring(game:HttpGet(('https://pastebin.com/raw/WrF6UWQg'),true))()
+end
+
+if game.PlaceId == 6403373529 then -- strike battles
+	Supported.Visible = true
+	NotSupported.Visible = false -- check x2
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))()
 end
