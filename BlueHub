@@ -1,0 +1,156 @@
+-- UPDATED AS OF 6/4/2022
+
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local bluemuch = Instance.new("ScreenGui")
+local Supported = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local NotSupported = Instance.new("TextLabel")
+local Supported_2 = Instance.new("TextLabel")
+local NotSupported_2 = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Title_2 = Instance.new("TextLabel")
+local NotSupported_3 = Instance.new("TextLabel")
+local Supported_3 = Instance.new("TextLabel")
+
+--Properties:
+
+bluemuch.Name = "bluemuch"
+bluemuch.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+bluemuch.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Supported.Name = "Supported"
+Supported.Parent = bluemuch
+Supported.AnchorPoint = Vector2.new(0.5, 0.5)
+Supported.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Supported.BackgroundTransparency = 0.100
+Supported.Position = UDim2.new(0.166270778, 0, 0.898688018, 0)
+Supported.Size = UDim2.new(0, 400, 0, 121)
+Supported.Visible = false
+
+UICorner.CornerRadius = UDim.new(0, 12)
+UICorner.Parent = Supported
+
+Title.Name = "Title"
+Title.Parent = Supported
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.0372093022, 0, 0.217647076, 0)
+Title.Size = UDim2.new(0, 398, 0, 32)
+Title.Font = Enum.Font.GothamBlack
+Title.Text = "bluemuch?"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+Title.TextXAlignment = Enum.TextXAlignment.Left
+
+NotSupported.Name = "NotSupported"
+NotSupported.Parent = Supported
+NotSupported.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NotSupported.BackgroundTransparency = 1.000
+NotSupported.Position = UDim2.new(0.0372092836, 0, 0.45972839, 0)
+NotSupported.Size = UDim2.new(0, 378, 0, 28)
+NotSupported.Visible = false
+NotSupported.Font = Enum.Font.Gotham
+NotSupported.Text = "You're not in a supported game!"
+NotSupported.TextColor3 = Color3.fromRGB(255, 255, 255)
+NotSupported.TextScaled = true
+NotSupported.TextSize = 14.000
+NotSupported.TextWrapped = true
+NotSupported.TextXAlignment = Enum.TextXAlignment.Left
+
+Supported_2.Name = "Supported"
+Supported_2.Parent = Supported
+Supported_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Supported_2.BackgroundTransparency = 1.000
+Supported_2.Position = UDim2.new(0.0372092836, 0, 0.45972839, 0)
+Supported_2.Size = UDim2.new(0, 378, 0, 28)
+Supported_2.Font = Enum.Font.Gotham
+Supported_2.Text = "Supported Game Detected."
+Supported_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Supported_2.TextScaled = true
+Supported_2.TextSize = 14.000
+Supported_2.TextWrapped = true
+Supported_2.TextXAlignment = Enum.TextXAlignment.Left
+
+NotSupported_2.Name = "NotSupported"
+NotSupported_2.Parent = bluemuch
+NotSupported_2.AnchorPoint = Vector2.new(0.5, 0.5)
+NotSupported_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+NotSupported_2.BackgroundTransparency = 0.100
+NotSupported_2.Position = UDim2.new(0.166270778, 0, 0.898688018, 0)
+NotSupported_2.Size = UDim2.new(0, 400, 0, 121)
+NotSupported_2.Visible = false
+
+UICorner_2.CornerRadius = UDim.new(0, 12)
+UICorner_2.Parent = NotSupported_2
+
+Title_2.Name = "Title"
+Title_2.Parent = NotSupported_2
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.Position = UDim2.new(0.0372093022, 0, 0.217647076, 0)
+Title_2.Size = UDim2.new(0, 398, 0, 32)
+Title_2.Font = Enum.Font.GothamBlack
+Title_2.Text = "bluemuch?"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+Title_2.TextXAlignment = Enum.TextXAlignment.Left
+
+NotSupported_3.Name = "NotSupported"
+NotSupported_3.Parent = NotSupported_2
+NotSupported_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NotSupported_3.BackgroundTransparency = 1.000
+NotSupported_3.Position = UDim2.new(0.0372092836, 0, 0.45972839, 0)
+NotSupported_3.Size = UDim2.new(0, 378, 0, 28)
+NotSupported_3.Font = Enum.Font.Gotham
+NotSupported_3.Text = "You're not in a supported game!"
+NotSupported_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+NotSupported_3.TextScaled = true
+NotSupported_3.TextSize = 14.000
+NotSupported_3.TextWrapped = true
+NotSupported_3.TextXAlignment = Enum.TextXAlignment.Left
+
+Supported_3.Name = "Supported"
+Supported_3.Parent = NotSupported_2
+Supported_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Supported_3.BackgroundTransparency = 1.000
+Supported_3.Position = UDim2.new(0.0372092836, 0, 0.45972839, 0)
+Supported_3.Size = UDim2.new(0, 378, 0, 28)
+Supported_3.Visible = false
+Supported_3.Font = Enum.Font.Gotham
+Supported_3.Text = "Supported Game Detected. Automatically Launching"
+Supported_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Supported_3.TextScaled = true
+Supported_3.TextSize = 14.000
+Supported_3.TextWrapped = true
+Supported_3.TextXAlignment = Enum.TextXAlignment.Left
+
+warn("Supported Games: Skywars, BedWars, PrisonLife - [UPDATED AS OF 6/4/2022 AT 9:12PM PST]")
+
+if game.PlaceId == 8542259458 then
+	Supported.Visible = true
+	NotSupported.Visible = false -- check x2
+	shared.VapePrivate = true
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end
+
+if game.PlaceId == 6872265039 then
+	Supported.Visible = true
+	NotSupported.Visible = false -- check x2
+	shared.VapePrivate = true
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end
+
+if game.PlaceId == 155615604 then
+	Supported.Visible = true
+	NotSupported.Visible = false -- check x2
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Bluueey/ScriptsForNewHub/main/PrisonLife", true))()
+end
