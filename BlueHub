@@ -126,6 +126,40 @@ Supported_3.TextSize = 14.000
 Supported_3.TextWrapped = true
 Supported_3.TextXAlignment = Enum.TextXAlignment.Left
 
+-- SELF DESTRUCT
+-- SELF DESTRUCT
+-- SELF DESTRUCT
+-- SELF DESTRUCT
+-- SELF DESTRUCT
+-- SELF DESTRUCT
+-- SELF DESTRUCT
+
+local SelfDestruct = Instance.new("ScreenGui")
+local TextButton = Instance.new("TextButton")
+
+--Properties:
+
+SelfDestruct.Name = "SelfDestruct"
+SelfDestruct.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+SelfDestruct.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+TextButton.Parent = SelfDestruct
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Position = UDim2.new(0.84164685, 0, 0.927113712, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Blue Hub - Self Destruct"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 14.000
+
+-- this script destorys all ui for the 
+TextButton.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.PlayerGui.bluemuch:Destroy()
+	warn("Destroyed GUI")
+end)
+
+
 -- GAMES
 -- GAMES
 -- GAMES
@@ -224,35 +258,9 @@ if game.PlaceId == 648362523 then -- Breaking Point
     Supported.Visible = false
 end
 
--- SELF DESTRUCT
--- SELF DESTRUCT
--- SELF DESTRUCT
--- SELF DESTRUCT
--- SELF DESTRUCT
--- SELF DESTRUCT
--- SELF DESTRUCT
-
-local SelfDestruct = Instance.new("ScreenGui")
-local TextButton = Instance.new("TextButton")
-
---Properties:
-
-SelfDestruct.Name = "SelfDestruct"
-SelfDestruct.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-SelfDestruct.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-TextButton.Parent = SelfDestruct
-TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.BackgroundTransparency = 1.000
-TextButton.Position = UDim2.new(0.84164685, 0, 0.927113712, 0)
-TextButton.Size = UDim2.new(0, 200, 0, 50)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "Blue Hub - Self Destruct"
-TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.TextSize = 14.000
-
--- this script destorys all ui for the 
-TextButton.MouseButton1Click:Connect(function()
-	game.Players.LocalPlayer.PlayerGui.bluemuch:Destroy()
-	warn("Destroyed GUI")
-end)
+if game.PlaceId == 4716045691 then -- Polybattle
+	Supported.Visible = true
+	NotSupported.Visible = false -- check x2
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+    Supported.Visible = false
+end
